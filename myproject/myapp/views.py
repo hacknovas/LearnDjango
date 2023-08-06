@@ -3,7 +3,7 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse("Mhi is good")
+    return HttpResponse("Mahi is good")
 
 def index(request):
     context={
