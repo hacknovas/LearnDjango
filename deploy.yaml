@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: django-app
-        image: prathameshdoni/django_docker:changeNum
+        image: prathameshdoni/django_docker:nuMreplace
         ports:
         - containerPort: 80
