@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-app-CICD
+  labels:
+    app: django
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginxMy
+  template:
+    metadata:
+      labels:
+        app: nginxMY
+    spec:
+      containers:
+      - name: django-app
+        image: prathameshdoni/django_docker:changeNum
+        ports:
+        - containerPort: 80
