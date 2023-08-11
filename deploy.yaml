@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: django-app-cicd
+  name: django-app
   labels:
     app: django
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginxMy
+      app: nginx
   template:
     metadata:
       labels:
-        app: nginxMY
+        app: nginx
     spec:
       containers:
       - name: django-app
